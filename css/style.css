@@ -1,0 +1,464 @@
+/* CSS stylesheet for Intermediate Web Dev Final Project
+Document Name: style.css*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.bgimg-1,
+.africanimg,
+.asianimg,
+.protectimg,
+.dataimg,
+.contactimg,
+.helpus,
+.elephantbackside {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../images/elephant-1822636_1920.jpeg");
+    min-height: 100%;
+}
+
+.africanimg {
+    background-image: url("../images/african-elephant-4999036_1280.jpeg");
+    min-height: 100%;
+}
+
+.asianimg {
+    background-image: url("../images/asianelephant1.jpeg");
+    min-height: 100%;
+}
+
+.protectimg {
+    background-image: url("../images/elephant-2870777_1920.jpeg");
+    min-height: 100%;
+}
+
+.dataimg {
+    background-image: url("../images/elephantherd.jpeg");
+    min-height: 100%;
+}
+
+.contactimg {
+    background-image: url("../images/elephant-2923916_1920.jpeg");
+    min-height: 100%;
+}
+
+.helpus {
+    background-image: url("../images/elephant-2729413_1920.jpeg");
+    min-height: 100%;
+}
+
+.elephantbackside {
+    background-image: url("../images/elephantbackside.jpeg");
+    min-height: 100%;
+}
+
+
+/* non-background images */
+
+.traits {
+    background-image: url("../images/elephanttraits.jpeg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 700px;
+    height: 456px;
+}
+
+blockquote {
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font: 14px/20px italic Times, serif;
+    padding-left: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    background-color: #dadada;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: url(images/openquote4.gif);
+    background-position: middle left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
+}
+
+p.about {
+    padding-left: 15em;
+    padding-right: 15em;
+    color: black;
+    text-align: center;
+}
+
+p.bodytext {
+    padding-left: 15em;
+    padding-right: 15em;
+    color: black;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 0px;
+    margin-top: -25px;
+    margin-left: -25px;
+    height: 50px;
+    width: 50px;
+}
+
+.bounce {
+    -webkit-animation: bounce 1s infinite;
+    -moz-animation: bounce 1s infinite;
+    -o-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 30;
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 30;
+    }
+}
+
+@-o-keyframes bounce {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 30;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 30;
+    }
+}
+
+
+/* navbar links */
+
+.topnav {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: 75%;
+    width: 100%;
+    top: 0;
+    height: 35px;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* I can't get this thing to work at all. So frustrating
+.sticky {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: 75%;
+    width: 100%;
+    top: 0;
+    height: 35px;
+    background-color: black;
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 5px 75px 5px;
+    color: whitesmoke;
+}
+
+a:hover:not(.active) {
+    background-color: rgb(97, 97, 97);
+}
+
+
+/* section titles/headers */
+
+h1.titles {
+    position: absolute;
+    text-align: center;
+    left: 25%;
+    bottom: 50px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* margin-top: -25px;
+    margin-left: -25px; */
+    height: 50px;
+    width: 50%;
+    font-style: italic;
+}
+
+
+/* Titles/headers for last two pictures */
+
+h1.closings {
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 25%;
+    top: 50%;
+    height: 50px;
+    width: 50%;
+    font-style: italic;
+}
+
+
+/*Contact Form*/
+
+p.collabform {
+    position: relative;
+    left: 25%;
+    top: 2px;
+    width: 50%;
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid black;
+    width: 50%;
+    border: 3px solid black;
+    border-spacing: 15px;
+    border-collapse: collapse;
+}
+
+input[type=text],
+[type=month],
+select,
+textarea {
+    position: relative;
+    left: 42.5%;
+    width: 15%;
+    padding: 12px;
+    margin: 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    position: relative;
+    left: 42.5%;
+    width: 15%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    position: relative;
+    left: 42.5%;
+    width: 15%;
+    background-color: rgb(173, 194, 235);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+tr.dropdown {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 12px;
+    margin: 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    display: inline-block;
+}
+
+tr.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+tr.dropdown:hover tr.dropdown-content {
+    display: block;
+}
+
+
+/* CSS for Data Table */
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid black;
+    left: 20%;
+    width: 50%;
+    border: 3px solid black;
+    border-spacing: 15px;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+th,
+td {
+    color: black;
+}
+
+thead th {
+    background-color: aliceblue;
+}
+
+tr:nth-child(odd) {
+    background: #d3d3d3;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF;
+}
+
+tr:hover td {
+    background-color: #fcc;
+}
+
+tr {
+    text-align: center;
+}
+
+td,
+tr,
+th {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid black;
+}
+
+
+}
